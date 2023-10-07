@@ -1,0 +1,8 @@
+on:
+  schedule:
+    - cron: 30 5 * * 1,3
+
+jobs:
+  copy_randomuser_to_disk:
+    steps:
+      - collect: https://api.api-ninjas.com/v1/randomuser

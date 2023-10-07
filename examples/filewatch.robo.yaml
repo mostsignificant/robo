@@ -1,0 +1,23 @@
+on:
+  file:
+    types:
+      - created
+      - edited
+      - deleted
+  db:
+    types:
+      - cdc
+
+jobs:
+  mail:
+    to: cg@2601.me
+    subject: File Change!
+    body: |
+      a file changed
+  db:
+    connection: "postgresql://..."
+    sql: |
+      INSERT INTO
+
+      VALUES
+        ()

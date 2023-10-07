@@ -1,0 +1,6 @@
+select:
+  - username
+  - address
+  - birthday
+from: https://api.api-ninjas.com/v1/randomuser rnd
+where: rnd.birthday > 1952-04-15
